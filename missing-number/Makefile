@@ -7,3 +7,7 @@ solve: compile
 test: compile
 	./solution.exe < input > output
 	diff output correct
+
+smart:
+	g++ -std=c++20 -O2 -Wall smart.cpp -o smart.exe
+	./smart.exe < input
